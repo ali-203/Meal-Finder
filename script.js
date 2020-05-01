@@ -19,7 +19,17 @@ const term = search.value;
 if(term.trim()) {
  fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=${term}')
 .then(res => res.json())
-.then(data =>)
+.then(data => {
+    console.log(data);
+    resultHeading.innerHTML = '<h2>Search results for '${term}':</h2>';
+
+    if(data.meals === null) {
+resultHeading.innerHTML = <p>There are no search results.try again!</p>';}
+
+
+
+    }  
+}
 }else {
     alert('please enter a search term');
 
