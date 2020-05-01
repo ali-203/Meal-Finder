@@ -124,4 +124,3 @@ mealsEl.addEventListener('click', e => {
     getMealById(mealID);
   }
 });
-© 2020 GitHub, Inc.
